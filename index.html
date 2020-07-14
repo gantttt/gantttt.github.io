@@ -10,13 +10,14 @@
     <a-scene>
 
 	<a-entity environment></a-entity>
-
+	  
 	<a-assets>
     	<a-asset-item id="block" src="/stretchCube2.glb"></a-asset-item>
+	<audio id="blarp" src="river.mp3" preload="auto"></audio>
   	</a-assets>
 
-  	<a-entity gltf-model="#block" position= "0 4 0" animation-mixer></a-entity>
-	
+  	<a-entity gltf-model="#block" position= "0 2 0" animation-mixer></a-entity>
+	<a-entity sound="src: #blarp" position= "0 2 0"></a-entity>
 
     </a-scene>
   </body>
