@@ -1,0 +1,716 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8023,
+      "max": [
+        115.5,
+        65.5,
+        114
+      ],
+      "min": [
+        -115.5,
+        -65.5,
+        -114
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 96276,
+      "componentType": 5126,
+      "count": 8023,
+      "max": [
+        0.9999050498008728,
+        0.99999994039535522,
+        0.99999994039535522
+      ],
+      "min": [
+        -0.99988919496536255,
+        -0.98444122076034546,
+        -0.9998278021812439
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 8023,
+      "max": [
+        0.99998462200164795,
+        0.99982762336730957,
+        0.99980807304382324,
+        -1
+      ],
+      "min": [
+        -0.99949043989181519,
+        -0.99932128190994263,
+        -0.99742484092712402,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8023,
+      "max": [
+        0.9915040135383606,
+        0.99837297201156616
+      ],
+      "min": [
+        0.0039059999398887157,
+        0.0039060115814208984
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 40746,
+      "max": [
+        8022
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 192552,
+      "componentType": 5126,
+      "count": 1257,
+      "max": [
+        63.589767456054688,
+        1.9290932416915894,
+        62.287502288818359
+      ],
+      "min": [
+        -63.589767456054688,
+        -1.9290932416915894,
+        -62.287502288818359
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 207636,
+      "componentType": 5126,
+      "count": 1257,
+      "max": [
+        0.51187455654144287,
+        1,
+        0.78763705492019653
+      ],
+      "min": [
+        -0.43931668996810913,
+        0.60923296213150024,
+        -0.5549933910369873
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 128368,
+      "componentType": 5126,
+      "count": 1257,
+      "max": [
+        0.8139268159866333,
+        0.51006925106048584,
+        0.58063417673110962,
+        1
+      ],
+      "min": [
+        -0.83900326490402222,
+        -0.47888416051864624,
+        -0.68889987468719482,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 64184,
+      "componentType": 5126,
+      "count": 1257,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 162984,
+      "componentType": 5125,
+      "count": 7164,
+      "max": [
+        1256
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 222720,
+      "componentType": 5126,
+      "count": 1485,
+      "max": [
+        7.9056186676025391,
+        44.301212310791016,
+        12.827528953552246
+      ],
+      "min": [
+        -7.9071998596191406,
+        -39.869419097900391,
+        -1.1341096162796021
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 240540,
+      "componentType": 5126,
+      "count": 1485,
+      "max": [
+        0.53175336122512817,
+        0.61999201774597168,
+        -0.78460800647735596
+      ],
+      "min": [
+        -0.3233795166015625,
+        0.016056295484304428,
+        -0.99976783990859985
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 148480,
+      "componentType": 5126,
+      "count": 1485,
+      "max": [
+        1,
+        0.3482220470905304,
+        0.51377701759338379,
+        -1
+      ],
+      "min": [
+        0.8466680645942688,
+        -0.38050037622451782,
+        -0.31194841861724854,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 74240,
+      "componentType": 5126,
+      "count": 1485,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 191640,
+      "componentType": 5125,
+      "count": 8232,
+      "max": [
+        1484
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "w.bonato (https://sketchfab.com/w.bonato)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/c55e579fff3d4eafba223016c0cb6e08",
+      "title": "Statue Fountain - Greve - Tuscany"
+    },
+    "generator": "Sketchfab-3.20.7",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 224568,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 86120,
+      "byteOffset": 224568,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 258360,
+      "byteOffset": 310688,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 172240,
+      "byteOffset": 569048,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 741288,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/Greve_110816_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/Greve_110816_specularGlossiness.png"
+    },
+    {
+      "uri": "textures/Greve_110816_occlusion.png"
+    },
+    {
+      "uri": "textures/Greve_110816_emissive.jpeg"
+    },
+    {
+      "uri": "textures/fluid_white2_diffuse.png"
+    },
+    {
+      "uri": "textures/fluid_white_diffuse.png"
+    },
+    {
+      "uri": "textures/fluid_white_emissive.jpg"
+    },
+    {
+      "uri": "textures/fluid_white_occlusion.png"
+    },
+    {
+      "uri": "textures/fluid_white_specularGlossiness.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.20000000000000001,
+        0.20000000000000001,
+        0.20000000000000001
+      ],
+      "emissiveTexture": {
+        "index": 3,
+        "texCoord": 0
+      },
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.58999999999999997,
+            0.58999999999999997,
+            0.58999999999999997,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 0,
+            "texCoord": 0
+          },
+          "glossinessFactor": 1,
+          "specularFactor": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "specularGlossinessTexture": {
+            "index": 1,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "Greve_110816",
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 0.46999999999999997,
+        "texCoord": 0
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": false,
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 6,
+        "texCoord": 0
+      },
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.15098851947400002,
+            0.211089760387,
+            0.20898811169700002,
+            0.44
+          ],
+          "diffuseTexture": {
+            "index": 5,
+            "texCoord": 0
+          },
+          "glossinessFactor": 1,
+          "specularFactor": [
+            0.93999999999999995,
+            0.93999999999999995,
+            0.93999999999999995
+          ],
+          "specularGlossinessTexture": {
+            "index": 8,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "fluid_white",
+      "occlusionTexture": {
+        "index": 7,
+        "strength": 1,
+        "texCoord": 0
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.30980023755200004,
+            0.41244882177199998,
+            0.42776741051200001,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 4,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.70999999999999996,
+          "specularFactor": [
+            0.51000000000000001,
+            0.50396374531499999,
+            0.50396374531499999
+          ]
+        }
+      },
+      "name": "fluid_white2"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Main_Greve_110816_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Water1_fluid white_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Water2_fluid white2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TANGENT": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "90f1a0a3b85547b7b6c719c8e90fe340.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        7,
+        9
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        72.746116638183594,
+        -4.9452347755432129,
+        15.775910377502441,
+        1
+      ],
+      "name": "Greve_Fountain"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.4573045969009399,
+        27.836530685424805,
+        0.35246935486793518,
+        1
+      ],
+      "name": "Main"
+    },
+    {
+      "mesh": 0,
+      "name": "Main_Greve_110816_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.3546302318572998,
+        -32.781764984130859,
+        0.57762384414672852,
+        1
+      ],
+      "name": "Water1"
+    },
+    {
+      "mesh": 1,
+      "name": "Water1_fluid white_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2.8119349479675293,
+        4.9452347755432129,
+        -0.93009322881698608,
+        1
+      ],
+      "name": "Water2"
+    },
+    {
+      "mesh": 2,
+      "name": "Water2_fluid white2_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9728,
+      "minFilter": 9728,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    },
+    {
+      "sampler": 0,
+      "source": 7
+    },
+    {
+      "sampler": 1,
+      "source": 8
+    }
+  ]
+}
+
