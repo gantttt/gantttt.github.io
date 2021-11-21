@@ -1,94 +1,50 @@
-loc<html>
+<html>
   <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-	<script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.js"></script>
-  </head>
+	<script src="aframe-master.min.js"></script>
+	<script src="aframe-environment-component.min.js"></script>	
+	<script src="aframe-extras.js"></script>
+	<script src="aframe-ambisonic-component.min.js"></script>
+	<script src="play-on-window-click.js"></script>
+	<script src="hide-once-playing.js"></script>
+	<script src="play-on-vrdisplayactivate-or-enter-vr.js"></script>
+
+ </head>
 
   <body>
-	<a-scene background="color: #AAB" fog="type: linear; color: #AAB; far: 30; near: 0">
-
+	<a-scene background="color: #000000" fog="type: exponential; color: #AAAABB; density: .0" vr-mode-ui="enabled: false" loading-screen="dotsColor: #cfd1c6; backgroundColor: #39445c">
+	
 	<a-assets>
-	<img id="highlight1" src="img/radial-highlight.png">
-	<img id="shadow3" src="img/radial-shadow-3.png">
-	<a-asset-item id="fountain" src="models/fountain.glb"></a-asset-item>
-	<a-asset-item id="blue" src="models/24secBlue.glb"></a-asset-item>
-	<a-asset-item id="ball" src="models/19secBball.glb"></a-asset-item>
-	<a-asset-item id="plant" src="models/17secPlant.glb"></a-asset-item>
-	<a-asset-item id="plant2" src="models/20secPlant.glb"></a-asset-item>
-	<a-asset-item id="bananna" src="models/21secBananna.glb"></a-asset-item>
-	<a-asset-item id="globe" src="models/33secGlobeOffsetFix.glb"></a-asset-item>
-	<a-asset-item id="hoops" src="models/16secHoop.glb"></a-asset-item>
+	<audio id="audio" src="audio/neilOne.wav"></audio>
+	<img id="wallPic" src="img/wallPic.jpg">
   	</a-assets>
 
-	<a-entity camera look-controls wasd-controls position="-5 1.6 10"></a-entity>
-
-	<a-image position="0 -.8 5" src="#highlight1" rotation="-90 0 0" scale="30 30 30"></a-image>
-
-	<a-entity gltf-model="#fountain" position= "0 -1 0" scale= ".02 .02 .02"></a-entity>
-
-	<a-entity gltf-model="#blue" position= "5 4.5 -4" scale= "2 2 2" animation-mixer></a-entity>
-	<a-sound position="5 4.5 -4" src="audio/24sec.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 20042">
-	<a-entity gltf-model="#ball" position= "0 4.5 6" scale= "1 1 1" animation-mixer></a-entity>
-	<a-sound position="5 1 -4" src="audio/19sec.mp3" autoplay="true" loop="true"></a-sound> 
+	<a-ambisonic
+		id="ambisonic"
+		src="#audio"
+		channel-map="0, 3, 1, 2"
+		play-on-window-click
+		play-on-vrdisplayactivate-or-enter-vr
+		use-media-element="false"
+	></a-ambisonic>
+	
+	<a-entity movement-controls="fly: true" position="-10 7 -2" rotation=" 0 -100 0">
+	<a-entity camera look-controls>
+	<a-entity id="msg" position="0 -0.3 -1.5" text="align:center; 
+					width:3;
+					wrapCount:100;
+					color:white;
+					value:Click window to start audio. Please use headphones and view in full screen."
+					hide-once-playing="#ambisonic">			
+				</a-entity>
+					<a-entity id="msg" position="0 -0.36 -1.5" text="align:center; 
+					width:3;
+					wrapCount:100;
+					color:white;
+					value:Click and drag mouse to rotate soundfield."
+					hide-once-playing="#ambisonic">			
+				</a-entity>
+				</a-entity>	
 	</a-entity>
-
-	<a-entity gltf-model="#plant" position= "-8.5 -1.5 -2" scale= "0.75 0.75 0.75" animation-mixer></a-entity>
-	<a-sound position="-8.5 0 -2" src="audio/17sec.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-entity gltf-model="#plant2" position= "-4 -1.4 -7" scale= "0.65 0.65 0.65" animation-mixer></a-entity>
-	<a-sound position="-4 0 -7" src="audio/20sec.mp3" autoplay="true" loop="true"></a-sound> 
-		
-	<a-entity gltf-model="#bananna" position= "-4 1 8" scale= "1 1 1" rotation="-30 -45 -20" animation-mixer rotation="0 0 0" animation="property: rotation; to: 360 360 0; loop: true; easing: linear; dur: 10000">></a-entity>
-	<a-sound position="-4 1 8" src="audio/21sec.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-entity gltf-model="#globe" position= "0 -1.1 0" scale= "2.38 2.38 2.38" animation-mixer></a-entity>
-	<a-sound position="0 0 0" src="audio/33secOffset.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-entity gltf-model="#hoops" position= "8.3 -1 4.3" scale= "1.5 1.5 1.5" rotation= "0 165 0" animation-mixer></a-entity>
-	<a-sound position="8.3 -1 4.3" src="audio/16secOffset.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-sound position="15 0 0" src="audio/fills1.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-sound position="-15 0 0" src="audio/fills2.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-sound position="0 0 15" src="audio/fills3.mp3" autoplay="true" loop="true"></a-sound> 
-
-	<a-sound position="0 0 -15" src="audio/fills4.mp3" autoplay="true" loop="true"></a-sound> 
-
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000">
-	<a-sphere position="0 4.2 -20" radius="4.2" color="#F16745" roughness="0.8" width-segments="52" height-segments="52"></a-sphere>
-	<a-image src="#shadow3" position="0 -.7 -20" rotation="-90 0 0" scale="3 3 3"></a-image>
-	</a-entity>
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 12011">
-	<a-sphere position="-3 1.75 15" radius="1.75" color="#7BC8A4" roughness="0.2"></a-sphere>
-	<a-image src="#shadow3" position="-3 -.7 15" rotation="-90 0 0" scale="1.75 1.75 1.75"></a-image>
-	</a-entity>
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 30050">
-	<a-sphere position="-24 18 -34" radius="18" color="#FFC65D"></a-sphere>
-	<a-image src="#shadow3" position=" -24 -.7 -34" rotation="-90 0 0" scale="8 8 8"></a-image>
-	</a-entity>
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 72004">
-	<a-sphere position="25 12 20" radius="12" color="#7BC8A4"></a-sphere>
-	<a-image src="#shadow3" position="25 -.7 20" rotation="-90 0 0" scale="8 8 8"></a-image>
-	</a-entity>
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 100090">
-	<a-sphere position="-20 30 30" radius="30" color="#FFC65D" roughness="0.6"></a-sphere>
-	<a-image src="#shadow3" position="-20 -.7 30" rotation="-90 0 0" scale="15 15 15"></a-image>
-	</a-entity>
-
-	<a-entity position="0 0 0" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 3s0054">
-	<a-sphere position="5 2 25" radius="2" color="#93648D"></a-sphere>
-	<a-image src="#shadow3" position="5 -.7 25" rotation="-90 0 0" scale="2 2 2"></a-image>
-	</a-entity>
-
     </a-scene>
   </body>
 </html>
