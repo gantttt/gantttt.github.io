@@ -19,7 +19,7 @@
 	
 	<a-assets>
 	<audio id="audio" src="audio/neilOne.ogg"></audio>
-	<!-- <img id="wallPic" src="img/wallPic.jpg"> --> 
+	<img id="starPic" src="img/starSigns.jpg"> --> 
   	</a-assets>
 
 	<a-ambisonic
@@ -49,6 +49,16 @@
 				</a-entity>
 				</a-entity>	
 	</a-entity>
+
+	<a-entity scale="20 20 20"
+    geometry="primitive: sphere;"
+	src="#wallPic"
+    material="src: img/starSigns.jpg; repeat: 100 20; side: back; shader: flat; transparent: true:"
+    position="0.9 2.0 1.9"
+	rotation="152 182 2"
+	animation="property: rotation; to: 152 -362 2; loop: true; dur: 505000">
+	></a-entity>
+
     </a-scene>
   </body>
 </html>
